@@ -7,6 +7,33 @@ public class Electronics extends Product{
         this.brand=brand;
         this.warrantyPeriod=warrantyPeriod;
     }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public int getWarrantyPeriod() {
+        return warrantyPeriod;
+    }
+
     //getters+setters
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setWarrantyPeriod(int warrantyPeriod) {
+        this.warrantyPeriod = warrantyPeriod;
+    }
+    @Override
+    public String toString() {
+        return
+                        "ProductID: " + getProductID() + "\n" +
+                        "Product Name: " + getProductName() +  "\n" +
+                        "Available items: " + getAvailableItems() +  "\n" +
+                        "Price: " + getPrice() +  "\n"+
+                        "Brand: " + getBrand() +  "\n" +
+                        "Warranty: " + getWarrantyPeriod();
+    }
     //methosds
 }
