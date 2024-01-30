@@ -1,4 +1,8 @@
-public class Clothing extends Product{
+package Model;
+
+import Model.Product;
+
+public class Clothing extends Product {
     private String size;
     private String colour;
     public Clothing(String productID,String productName,int availableItems,double price,String size,String colour){
@@ -27,7 +31,7 @@ public class Clothing extends Product{
     public String toString() {
         return
                         "ProductID: " + getProductID() + "\n" +
-                        "Product Name: " + getProductName() +  "\n" +
+                        "Model.Product Name: " + getProductName() +  "\n" +
                         "Available items: " + getAvailableItems() +  "\n" +
                         "Price: " + getPrice() +  "\n"+
                         "Colour: " + getColour() +  "\n" +

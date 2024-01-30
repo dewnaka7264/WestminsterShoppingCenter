@@ -1,3 +1,5 @@
+package Model;
+
 import java.io.Serializable;
 
 public  abstract class  Product implements Serializable {
@@ -30,7 +32,9 @@ public  abstract class  Product implements Serializable {
         return price;
     }
     /// setters
-
+    public void purchase(int quantity) {
+        availableItems -=quantity;
+}
     public void setProductID(String productID) {
         this.productID = productID;
     }
@@ -51,7 +55,7 @@ public  abstract class  Product implements Serializable {
     public String toString() {
             return
                     "ProductID: " + getProductID() + "\n" +
-                            "Product Name: " + getProductName() +  "\n" +
+                            "Model.Product Name: " + getProductName() +  "\n" +
                             "Available items: " + getAvailableItems() +  "\n" +
                             "Price: " + getPrice() +  "\n";
 

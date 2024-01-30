@@ -1,4 +1,8 @@
-public class Electronics extends Product{
+package Model;
+
+import Model.Product;
+
+public class Electronics extends Product {
 
     private String brand;
     private int warrantyPeriod;
@@ -29,7 +33,7 @@ public class Electronics extends Product{
     public String toString() {
         return
                         "ProductID: " + getProductID() + "\n" +
-                        "Product Name: " + getProductName() +  "\n" +
+                        "Model.Product Name: " + getProductName() +  "\n" +
                         "Available items: " + getAvailableItems() +  "\n" +
                         "Price: " + getPrice() +  "\n"+
                         "Brand: " + getBrand() +  "\n" +
